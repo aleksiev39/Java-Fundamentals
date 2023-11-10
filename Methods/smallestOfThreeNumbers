@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class smallestOfThreeNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int numberOne = Integer.parseInt(scanner.nextLine());
+        int numberTwo = Integer.parseInt(scanner.nextLine());
+        int numberThree = Integer.parseInt(scanner.nextLine());
+
+        printSmallestNumber(numberOne,numberTwo,numberThree);
+    }
+    public static void printSmallestNumber (int numberOne , int numberTwo , int numberThree) {
+        if(numberOne < numberTwo && numberOne < numberThree) {
+            System.out.println(numberOne);
+
+        } else if (numberTwo < numberOne && numberTwo < numberThree) {
+            System.out.println(numberTwo);
+
+        }else {
+            System.out.println(numberThree);
+        }
+
+        }
+}
